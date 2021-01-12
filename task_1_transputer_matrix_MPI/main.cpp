@@ -20,14 +20,14 @@ enum Type_proc {
 
 // Инициализация сообщение
 void initialization_message() {
-  for (int i = 0; i < CNT_PROCES; ++i) {
+  for (int i = 0; i < SIZE_MESSAGE; ++i) {
     message[i] = i;
   }
 }
 
 // Проверка, что сообщение верно получено
 void check_result() {
-  for (int i = 0; i < CNT_PROCES; ++i) {
+  for (int i = 0; i < SIZE_MESSAGE; ++i) {
     assert(message[i] == i);
   }
 }
